@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horário de Atendimento</title>
+    <link rel="stylesheet" href="./CSS/stylehorariodeatendimento.css">
+</head>
+
+<body style="background-color: rgba(197, 219, 248, 0.404)">
+    
+    <main>
+        <section>
+            <head><h1>Horário de Agendamento</h1>
+            <p>Nossos fisioterapeutas realizam uma avaliação para elaborar um plano terapêutico de
+                acordo com as necessidades e expectativas de cada paciente.
+                No primeiro contato com o profissional o paciente será avaliado e atendido!</p>
+            </head>
+            <br>
+            <br>
+            <div class="col-6 col-s-12"> <!-- Adicionei esta div para envolver o conteúdo -->
+                <fieldset>
+                    <legend>Cadastro</legend>
+                    <br>
+                    <div class="row">
+
+                        <div>
+                            <label for="inome">Cliente:</label>
+                            <label for="icod"></label>
+                            <input type="text" id="inome" name="name" required maxlength="30"
+                            placeholder="Nome Completo" autocomplete="name">
+                            
+                        </div>
+                    
+                        <div>
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="txtemail" name="email" class="caixa-texo" required
+                             placeholder="E-mail">
+                        </div>
+
+                        <div>
+                            <label for="contato">Contato:</label>
+                            <input type="text" id="txtcontato" name="contato" class="caixa-alta" required
+                            placeholder="(xx) x xxxx xxxx">
+                        </div>
+                        <br>
+                        <button type="button">Enviar</button>
+
+                    </div>
+                </fieldset>
+            </div>
+        </section>
+        <br>
+        <br>
+        <section>
+            <div class="col-6 col-s-12"> <!-- Adicionei esta div para envolver o conteúdo -->
+                <fieldset>
+                    <legend>Agendamento</legend>
+                    <br>
+                    <div class="row">
+
+                        <label>Especialidade:</label>
+                        <select name="Especialidade">
+                            <option value="selecionar">Selecionar</option>
+                            <option value="FisioterapiaPélvicaeUroginecológica">Fisioterapia Pélvica e Uroginecológica</option>
+                            <option value="FisioterapiaemTraumaeOrtopedia">Fisioterapia em Trauma e Ortopedia</option>
+                            <option value="FisioterapianoTratamentodeMastectomia">Fisioterapia no Tratamento de Mastectomia</option>
+                            <option value="FisioterapiaVascular">Fisioterapia Vascular</option>
+                        </select>
+
+                        <div>
+                            <label for="inome">Nº da Carteira:</label>  
+                            <input type="text" id="inome" name="name" required maxlength="30"
+                            placeholder="Nº da Carteira" autocomplete="name">
+                            
+                        </div>
+
+                        <div>
+                            <label for="Data">Data:</label>
+                            <input type="date" id="txtData" name="data" class="caixa-texo" min="2024-01-24" max="2024-02-24" required>
+                        </div>
+                        <div>
+                            <label for="rotulo">Hora:</label>
+                            <input type="time" id="txtHora" name="hora" class="caixa-alta" min="18:00" max="07:00" required>
+                        </div>
+                        <br>
+                        <button type="button">Enviar</button>
+
+                    </div>
+                </fieldset>
+            </div>
+        </section>
+    </main>
+    <br>
+    <br>
+    <br>
+    <table border="1" width="400"  cellspacing="5" align="center">
+        <tr>
+            <td>Especialidades</td>
+            <td>Segunda a Sexta</td>
+            <td>Sábados</td>
+        </tr>
+        <tr>
+            <td>Fisioterapia Pélvica e Uroginecológica</td>
+            <td>08h - 19h</td>
+            <td>10h - 14h</td>
+        </tr>
+        <tr>
+            <td>Fisioterapia em Trauma e Ortopedia</td>
+            <td>08h - 19h</td>
+            <td>10h - 14h</td>
+        </tr>
+        <tr>
+            <td>Fisioterapia no Tratamento de Mastectomia</td>
+            <td>08h - 19h</td>
+            <td>10h - 14h</td>
+        </tr>
+        <tr>
+            <td>Fisioterapia Vascular</td>
+            <td>08h - 19h</td>
+            <td>10h - 14h</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <footer>
+        <nav class="rodape">
+                  <h3>Contato</h3>
+                  whatsApp: (81) 9.9677-7635 <br>
+                  E-mail: tec.melocavalcanti@gmail.com
+                  <h3> Redes Sociais</h3>
+                  <a href="https://www.instagram.com/_lariih.dev/">Instagram</a>
+                  <a href="https://www.linkedin.com/in/larissarebeka/">Linkedin</a>
+      </nav>
+      </footer>
+
+</body>
+
+</html>
